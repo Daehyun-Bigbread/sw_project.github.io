@@ -1,0 +1,21 @@
+1. css를 html에 넣는 방법
+  첫 번째는 <style> 태그를 이용해서 넣는 방법이다. 무조건 <head> 태그 안에 들어가야 한다. (inline css)
+  두 번째는 <link href="" rel=""> 태그를 이용해 css파일 자체를 연결하는 것. css코드가 길어지면 길어질 수록 이 방법이 효율적이다. (external css)
+  
+2. 작성하는 법
+  모든 css는 selector가 있고, 그 selector는 html 태그를 가리킨다.
+  
+  Selector {
+    속성1 = sth1;
+    속성2 = sth2;
+    }
+  
+  selector는 속성을 가지고 있고, 각 속성들은 세미콜론으로 닫히게 된다.
+  만약 inline과 external css가 같은 태그를 가리킨다면, 마지막에 작성된 코드가 적용된다.
+  CSS에서 C가 cascading인데, 이는 폭포가 아래로 쏟아지는 것을 생각하면 된다. 그런 의미.
+  
+3. block과 inline
+  block 유형인 <p>, <div> 등은 옆에 다른 요소가 오지 못한다.
+  inline의 유형인 <span>, <img>는 옆에 다른 요소가 올 수 있다. ex) 작은 글(span), 그림(img), 링크(a) 등등 
+  대부분은 block이다. inline인 태그들은 block에 비해 적은 편이다.
+  그래서 inline의 종류를 기억하는 편이 편하다. inline이 아니면 block일 테니까.
