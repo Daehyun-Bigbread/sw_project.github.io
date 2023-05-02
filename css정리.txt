@@ -19,3 +19,31 @@
   inline의 유형인 <span>, <img>는 옆에 다른 요소가 올 수 있다. ex) 작은 글(span), 그림(img), 링크(a) 등등 
   대부분은 block이다. inline인 태그들은 block에 비해 적은 편이다.
   그래서 inline의 종류를 기억하는 편이 편하다. inline이 아니면 block일 테니까.
+
+4. block's properties
+  block은 inline과 다르게 너비와 높이를 가지고 있다. 또한 3가지 특징을 가지고 있는데, margin, padding, border 3가지를 가지고 있다.
+  
+  1) margin
+    box경계 밖의 영역을 의미한다.
+    다양한 방향으로 margin을 설정할 수 있고, 전역으로 적용되게 설정할 수도 있다. margin의 수치를 변경하다 보면, top, bottom에서 마진이 겹치는 경우가 생긴다.
+    이때 두 마진중 더 큰 값의 마진으로 겹치게 되는데, 이를 collapsing margin이라 하는데, 그닥 중요하지는 않은거 같다.
+   
+  2) padding
+    margin과 반대의 개념으로 box경계 내부의 영역을 의미한다.
+    
+  3) border
+    box의 경계를 뜻한다.
+    
+css를 적용하다 보면, 같은 html tag에 다른 속성을 적용해야 할 때가 있는데, 이때는 ID를 설정하거나, class를 설정해주면 된다.
+id는 tag당 고유한 id 하나씩만 적용이 가능하며 style에 #id로 설정하고 적용이 가능하다.
+class는 여러 tag에 적용이 가능하며, 하나의 tag에 여러 개의 class를 적용하는 것이 가능하다. css의 class는 java나 python과는 다르다.
+그리고 .class로 설정할 수 있다.
+
+  5. inline-box와 flex box
+     block은 옆에 다른 요소가 올 수 없다. block 옆에 다른 요소를 두고 싶으면 inline으로 display를 변경하면 되는데, 이러면 너비와 높이를 설정할 수 없게 된다.
+     이럴때는 inline-box로 설정해주면 되는데, 이때 요소 사이에 설정하지도 않은 margin이 생긴다.
+     그래서 flex로 설정하는게 좋다.
+     <body>에 <div>가 있다고 할 때, 보통은 div의 display를 설정했지만, flex는 적용시키고자 하는 영역의 부모 element에 적용을 시킨다.
+     따라서 <div>에 flex를 적용시키고 싶으면, <body>에 적용하면 된다는 말이다.
+     부가적인 속성은 MDN 참고 바란다. 개인소견이지만, flex는 잘 쓸 거 같다는 생각이 든다.
+    
