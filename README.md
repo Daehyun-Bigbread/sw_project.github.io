@@ -1,2 +1,2 @@
 # sw_project.github.io
-opensource project
+opensource project repository 입니다.
