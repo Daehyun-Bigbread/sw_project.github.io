@@ -1,9 +1,5 @@
 *{
-  margin: 0px
-}
-
-body {
-  
+  margin: 0px;
 }
 
 header {
@@ -13,6 +9,7 @@ header {
 }
 
 .TopSide_Bar {
+  display:flex;
   width: 1300px;
   height: 60px;
   margin: auto;
@@ -25,18 +22,14 @@ header {
   background-color: green;
 }
 
-nav {
-  
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  line-height: 70px;
+  width: calc(1300px - 300px);
+  background-color: rgb(191, 0, 0);
 }
 
-div {
-  
-}
-
-section {
-  
-}
-
-footer{
-  
+.nav > li > a {
+  color: white;
 }
