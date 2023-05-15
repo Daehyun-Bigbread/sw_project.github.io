@@ -72,6 +72,7 @@ header {
   height: 260px;
   width: 250px;
   background-color: green;
+  border:3px solid black;
 }
 
 .content > div:first-child {
