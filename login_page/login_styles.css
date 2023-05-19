@@ -28,7 +28,7 @@
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #4caf50;
+  background: #FFC90E;
   width: 100%;
   border: 0;
   padding: 15px;
@@ -90,12 +90,12 @@
   color: #ef3b3a;
 }
 body {
-  background: #76b852; /* fallback for old browsers */
-  background: rgb(141, 194, 111);
+  background: #F5DEB3; /* fallback for old browsers */
+  background: rgb(245, 222, 179);
   background: linear-gradient(
     90deg,
-    rgba(141, 194, 111, 1) 0%,
-    rgba(118, 184, 82, 1) 50%
+    rgba(245, 222, 179, 1) 0%,
+    rgba(222, 212, 82, 1) 50%
   );
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
