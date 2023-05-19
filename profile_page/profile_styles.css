@@ -1,8 +1,10 @@
 body {
   margin: 0;
-  width: 100%;
-  height: 100%;
-} 
+  font-family: sans-serif;
+  height: 1500px;
+  position: relative;
+  background-color: #EFE7E3;
+}
 
 header {
   position: fixed;
@@ -75,36 +77,96 @@ header {
   text-shadow: 0.7px 0.7px 0.7px #000;
 }
 
-body {
-  font-family: sans-serif;
-  height: 1500px;
-  position: relative;
+.frame{
+  margin: 30px 150px;
+  display: flex;
+  flex-direction: column;
 }
 
-.box-left {
-  margin: 20px;
-  border: 1px solid black;
-  padding: 20px;
-  background-color: rgb(187, 214, 222);
-  height: 200px;
-  width: 80%;
-  position: absolute;
-  top: 180px;
-  left: 200px;
+
+/* INFO Section*/
+
+/*profile-section*/
+.profile-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 100px 100px;
 }
 
-/* .box-content {
-  font-size: 50px;
-  margin: 50px;
-  margin-left: 100px;
-  color: white;
-  background-color: rgb(187, 218, 222);
-} */
+#profile-picture{
+  width: 400px;
+  margin-right: 60px;
+}
 
-/* padding: 2em 2em 2em;
-margin: 2em 0;
-font-weight: bold;
-color: #5B8BD0;
-background: #FFF;
-border: solid 3px black;
-border-radius: 10px; */
+.introduction>h2{
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+}
+
+.introduction>p{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+#capability{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 30px;
+}
+
+/*value section*/
+.value-menu{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+  margin: 30px 100px;
+}
+
+.value-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  margin: 100px 150px;
+  margin-top: 20px;
+}
+
+.value{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+  align-items: center;
+
+}
+
+.value-icon{
+  width: 100px;
+  height: 100px;
+  border: 2px solid #C2B4AB;
+  border-radius: 100px;
+  padding: 15px;
+}
+
+.value-intro{
+  margin-left: 30px;
+}
+
+.value-name{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.value-exp{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0px;
+}
