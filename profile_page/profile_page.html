@@ -3,27 +3,64 @@
     <head>
         <meta charset="utf-8">
         <title>Profile Page</title>
-        <link href="profile.css" rel="stylesheet" />
+        <link href="profile_style.css" rel="stylesheet" />
         <link
           href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap"
           rel="stylesheet"
         />
     </head>
     <body>
-        <header>
-        </header>
-          <nav class="menu-bar">
-            <div class = "index">
-              <!-- 프로필 이미지 -->
-              <div class = "img">
-                <img id="porfile-img" src ="images/mimoticon.jpeg">
-              </div>
-              <br>
-              <!-- 목차 내용 -->
-              <h3 class="click">ABOUT</h3>
-              <h3 class="click">EXPERIENCE</h3>
-              <h3 class="click">EDUCATION</h3>
-              <h3 class="click">INTERESTS</h3>
-            </div>
-          </nav>
+      <div class="box-header"></div>
+      <div class="box-left">
+        <div class="box-content">글자 적기</div>
+      </div>
+      
+      <div class="box-right"></div>
+      <div class="nav">
+        <ul>
+          <ul id="home_button"><a href="main.html">home_img</a></ul>
+          <form>
+            <input type="search" placeholder="search" padding="20px"/>
+            <button type="button">
+              <img id="ser_img" src="main_source/search.png" />
+            </button>
+          </form>
+          <li id="personal_button">
+            <a href="login.html">personal_img</a>
+          </li>
+        </ul>
+      </div>
+
+      <nav class="menu-bar">
+        <div class = "index">
+          <br>
+          <h3 class="click">남영재</h3>
+          <h3 class="click">김대현</h3>
+          <h3 class="click">김소정</h3>
+        </div>
+   </body>
 </html>
+
+      
+
+
+
+      <!--
+        <nav class="menu-bar">
+          <div class = "index">
+            <br>
+            <h3 class="click">남영재</h3>
+            <h3 class="click">김대현</h3>
+            <h3 class="click">김소정</h3>
+          </div>
+
+        
+          
+          <p>
+            <img id="selfie1" srt="images/self1.jpg" alt="selfie 1" width="240mm" height="400mm">
+            <strong>이름</strong> <small>(학과, 학번)</small>: &nbsp; <input type="text" name="name"><br>
+            <strong>취미</strong> <small>(여러개 작성 가능)</small>: <input type="text" name="hobby">              
+            <strong>관심분야</strong>: <input type="text" name="interests">
+          </p>
+        </nav>
+        -->
