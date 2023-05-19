@@ -1,1 +1,46 @@
-
+body {
+    margin: 0;
+  } 
+  
+  /* 프로필 이미지 */
+  .img {
+    justify-content: center;
+  }
+  #porfile-img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #2B3856;
+  transform: scale(1); /* 이미지 사이즈 고정 */
+  border-radius: 70%
+  } 
+  
+  .menu-bar {
+    position: fixed;
+    border: 0;
+    background-color: #2B3856;
+    display: block;
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .index {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  /* 목차 */
+  .index h3 {
+    color: white;
+    opacity: 0.7;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* 목차 각 항목 반응형 커서 */
+  .index h3:hover {
+    font-size: 1.1em;
+    opacity: 1;
+    text-shadow: 0.7px 0.7px 0.7px #000;
+  }
