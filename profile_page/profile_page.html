@@ -1,110 +1,74 @@
-body {
-  margin: 0;
-  width: 100%;
-  height: 100%;
-} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFO</title>
+    <link rel="stylesheet" type="text/css" href="practice_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="box-right"></div>
+  <div class="nav">
+    <ul>
+      <ul id="home_button"><a href="main.html">home_img</a></ul>
+      <form>
+        <input type="search" placeholder="search" padding="20px"/>
+        <button type="button">
+          <img id="ser_img" src="main_source/search.png" />
+        </button>
+      </form>
+      <li id="personal_button">
+        <a href="login.html">personal_img</a>
+      </li>
+    </ul>
+  </div>
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  justify-content: center;
-  width: 100%;
-  height: 724px;
-  background-color: wheat;
-}
+  <nav class="menu-bar">
+    <div class = "index">
+      <br>
+      <h3 class="click">남영재</h3>
+      <h3 class="click">김대현</h3>
+      <h3 class="click">김소정</h3>
+    </div>
+  </nav>
 
-.nav {
-  position: fixed;
-  margin-top: 30px;
-  margin: 0px auto 0px auto;
-  width: 1300px;
-  height: 70px;
-}
+    <div class="frame">
+        <div class="profile-section">
+            <img id="profile-picture" src="profile.jpg">
+            <div class="introduction">
+                <h2>NAME</h2>
+                <p>1. <br>2. <br>3. </p>
+                <h2>ABOUT ME</h2>
+                <p  id="capability">마찬가지로<br>여기에<br>내용 적기</p>
+            </div>
+        </div>
 
-.nav > ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav > ul > form > input {
-  width: 450px;
-  height: 70px;
-  border: none;
-  background-color: rgba(0, 0, 0, 10%);
-}
-
-.nav > ul > form > button {
-  width: 50px;
-  height: 70px;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 10%);
-  color: white;
-  border: none;
-}
-
-.menu-bar {
-  position: fixed;
-  border: 0;
-  background-color: #2B3856;
-  display: block;
-  width: 200px;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.index {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-/* 목차 */
-.index h3 {
-  color: white;
-  opacity: 0.7;
-  text-decoration: none;
-  cursor: pointer;
-}
-/* 목차 각 항목 반응형 커서 */
-.index h3:hover {
-  font-size: 1.1em;
-  opacity: 1;
-  text-shadow: 0.7px 0.7px 0.7px #000;
-}
-
-body {
-  font-family: sans-serif;
-  height: 1500px;
-  position: relative;
-}
-
-.box-left {
-  margin: 20px;
-  border: 1px solid black;
-  padding: 20px;
-  background-color: rgb(187, 214, 222);
-  height: 200px;
-  width: 80%;
-  position: absolute;
-  top: 180px;
-  left: 200px;
-}
-
-/* .box-content {
-  font-size: 50px;
-  margin: 50px;
-  margin-left: 100px;
-  color: white;
-  background-color: rgb(187, 218, 222);
-} */
-
-/* padding: 2em 2em 2em;
-margin: 2em 0;
-font-weight: bold;
-color: #5B8BD0;
-background: #FFF;
-border: solid 3px black;
-border-radius: 10px; */
+        <h5 class="value-menu">CONTACT ME</h5>
+        <div class="value-section">
+            <div class="value">
+                <img class="value-icon" src="github.png">
+                <div class="value-intro">
+                    <h4 class="value-name">GITHUB</h4>
+                    <p class="value-exp">깃허브 소개</p>
+                </div>
+            </div>
+            <div class="value">
+                <img class="value-icon" src="instagram.png">
+                <div class="value-intro">
+                    <h4 class="value-name">INSTAGRAM</h4>
+                    <p class="value-exp">인스타그램 소개</p>
+                </div>
+            </div>
+            <div class="value">
+                <img class="value-icon" src="blog.png">
+                <div class="value-intro">
+                    <h4 class="value-name">BLOG</h4>
+                    <p class="value-exp">블로그 소개</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</body>
+</html>
