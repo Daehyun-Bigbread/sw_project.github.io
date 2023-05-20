@@ -1,29 +1,74 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Profile Page</title>
-        <link href="profile.css" rel="stylesheet" />
-        <link
-          href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap"
-          rel="stylesheet"
-        />
-    </head>
-    <body>
-        <header>
-        </header>
-          <nav class="menu-bar">
-            <div class = "index">
-              <!-- 프로필 이미지 -->
-              <div class = "img">
-                <img id="porfile-img" src ="images/mimoticon.jpeg">
-              </div>
-              <br>
-              <!-- 목차 내용 -->
-              <h3 class="click">ABOUT</h3>
-              <h3 class="click">EXPERIENCE</h3>
-              <h3 class="click">EDUCATION</h3>
-              <h3 class="click">INTERESTS</h3>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFO</title>
+    <link rel="stylesheet" type="text/css" href="profile_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="box-right"></div>
+  <div class="nav">
+    <ul>
+      <ul id="home_button"><a href="main.html">home_img</a></ul>
+      <form>
+        <input type="search" placeholder="search" padding="20px"/>
+        <button type="button">
+          <img id="ser_img" src="main_source/search.png" />
+        </button>
+      </form>
+      <li id="personal_button">
+        <a href="login.html">personal_img</a>
+      </li>
+    </ul>
+  </div>
+
+  <nav class="menu-bar">
+    <div class = "index">
+      <br>
+      <h3 class="click">남영재</h3>
+      <h3 class="click">김대현</h3>
+      <h3 class="click">김소정</h3>
+    </div>
+  </nav>
+
+    <div class="frame">
+        <div class="profile-section">
+            <img id="profile-picture" src="profile.jpg">
+            <div class="introduction">
+                <h2>NAME</h2>
+                <p>1. <br>2. <br>3. </p>
+                <h2>ABOUT ME</h2>
+                <p  id="capability">마찬가지로<br>여기에<br>내용 적기</p>
             </div>
-          </nav>
+        </div>
+
+        <h5 class="value-menu">CONTACT ME</h5>
+        <div class="value-section">
+            <div class="value">
+                <img class="value-icon" src="github.png">
+                <div class="value-intro">
+                    <h4 class="value-name">GITHUB</h4>
+                    <p class="value-exp">깃허브 소개</p>
+                </div>
+            </div>
+            <div class="value">
+                <img class="value-icon" src="instagram.png">
+                <div class="value-intro">
+                    <h4 class="value-name">INSTAGRAM</h4>
+                    <p class="value-exp">인스타그램 소개</p>
+                </div>
+            </div>
+            <div class="value">
+                <img class="value-icon" src="blog.png">
+                <div class="value-intro">
+                    <h4 class="value-name">BLOG</h4>
+                    <p class="value-exp">블로그 소개</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</body>
 </html>
