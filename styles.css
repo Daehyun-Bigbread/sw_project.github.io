@@ -53,7 +53,8 @@ header {
   object-fit: cover;
 }
 
-#per_img {
+#per_img,
+#home_img {
   align-items: center;
   display: block;
   margin-top: 10px;
