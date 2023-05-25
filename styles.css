@@ -115,6 +115,12 @@ header {
   margin: 10px auto;
 }
 
+.post_img {
+  width: 200px;
+  height: 150px;
+  border: black solid 1px;
+}
+
 #pro_img {
   display: block;
   margin: 110px 80px 10px 80px;
