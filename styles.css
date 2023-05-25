@@ -115,10 +115,19 @@ header {
   margin: 10px auto;
 }
 
+.post_text > h4 {
+  line-height: 150%;
+}
+
+.post_text > h5 {
+  line-height: 170%;
+}
+
 .post_img {
   width: 200px;
   height: 150px;
   border: black solid 1px;
+  background-color: ghostwhite;
 }
 
 #pro_img {
