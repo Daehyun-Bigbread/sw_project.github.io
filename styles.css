@@ -17,6 +17,7 @@ header {
   width: 100%;
   height: 724px;
   background-image: url("main_source/background_img.jpg");
+  background-size: cover;
 }
 
 .nav {
