@@ -1,8 +1,22 @@
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  background-image: url("../main_source/background_img.jpg");
+}
+
 #home_img {
   display: block;
   margin: 100px auto 0px auto;
   height: 200px;
   width: 200px;
+}
+
+#center_box {
+  margin: 0px auto;
+  width: 1000px;
+  height: 100%;
 }
 
 .login-page {
@@ -23,7 +37,7 @@
 .form input {
   font-family: "Roboto", sans-serif;
   outline: 0;
-  background: #f2f2f2;
+  background: rgba(0, 0, 0, 10%);
   width: 100%;
   height: 60px;
   border: 0;
@@ -97,16 +111,4 @@
 }
 .container .info span .fa {
   color: #ef3b3a;
-}
-body {
-  background: #f5deb3; /* fallback for old browsers */
-  background: rgb(245, 222, 179);
-  background: linear-gradient(
-    90deg,
-    rgba(245, 222, 179, 1) 0%,
-    rgba(222, 212, 82, 1) 50%
-  );
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
