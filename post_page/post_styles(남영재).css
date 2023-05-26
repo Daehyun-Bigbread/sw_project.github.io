@@ -99,3 +99,9 @@ header {
   margin: 0 auto 0 auto;
   background-color: white;
 }
+
+.footer {
+  min-width: 1440px;
+  display: flex;
+  flex-direction: column;
+}
