@@ -4,6 +4,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   background-image: url("../main_source/background_img.jpg");
+  background-size: cover;
 }
 
 #home_img {
