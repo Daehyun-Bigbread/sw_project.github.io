@@ -185,3 +185,9 @@ body {
   font-size: 16px;
   margin: 0px;
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0px;
+}
