@@ -1,25 +1,53 @@
-* {
-  margin: 0px;
-  text-decoration: none;
-  border-collapse: none;
+*{
+  font-family: 'Noto Sans KR', sans-serif;
   list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin: 0px auto;
   padding: 0px;
-  color: black;
-  font-family: "Noto Sans KR", sans-serif;
+  color: #000;
 }
 
 body {
   background-color: rgb(241, 242, 246);
-}
-.main_wrap {
-  min-width: 1440px;
+  overflow-x: hidden;
 }
 
-header {
-  justify-content: center;
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+.contents1 {
+  font-size: 20px;
+  font-weight: lighter;
+}
+.contents2 {
+  font-size: 18px;
+}
+.contents3 {
+  font-size: 14px;
+  font-weight: 100;
+}
+.contents1_bold {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.result{
+  font-size: 24px;
+}
+
+.intro_bg{
+  background-image: url("stussy_main.jpg");
   width: 100%;
-  height: 400px;
-  background-color: tomato;
+  height: 714px;
+}
+
+.header {
+  width:1280px;
+  margin:auto;
+  display:flex;
+  height: 86px;
 }
 
 .nav {
@@ -66,43 +94,161 @@ header {
   object-fit: cover;
 }
 
-.title {
-  margin: 100px auto;
+.amount {
+  position: relative;
+  top:-66px;
+  display: flex;
+  width:1280px;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+
+.amount > li {
+  flex: 1;
+  height: 132px;
+}
+
+.amount > li > div {
+  text-align: center;
+  margin-top:37px;
+  height:57px;
+}
+
+.amount > li:not(:last-child) > div {
+  border-right:1px solid #E1E1E1;
+}
+
+.intro_text{
+  width:100%;
+  margin:231px auto 231px auto;
   text-align: center;
 }
 
-.title > h1 {
-  font-size: 48px;
+.intro_text > h1 {
+  color:#fff;
 }
 
-.title > h4 {
-  font-size: 25px;
+.intro_text > h4 {
+  color:#fff;
 }
 
-.title > h1,
-.title > h4 {
-  color: black;
-}
-
-.content_wrap {
+.main_text0 {
   width: 100%;
+  height:601px;
+  margin-top:-132px;
+  background: #f1f2f3;
+}
+.main_text0 > h1 {
+  padding-top:116px;
+  text-align: center;
+}
+.main_text0 > .contents1 {
+  text-align: center;
 }
 
-.content {
-  padding: 10px 20px 15px 20px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 2);
+.icons {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1260px;
-  height: 500px;
-  margin: 0 auto 0 auto;
-  background-color: white;
+  width:1280px;
+  height: 302px;
+  margin:auto;
 }
 
-.footer {
+.icons > li {
+  flex: 1;
+  background: white;
+  margin-top:49px;
+  height:302px;
+  text-align: center;
+}
+.icons > li > .icon_img {
+  margin-top:18px;
+}
+
+.icons > li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.icons .contents2 {
+  width:280px;
+  margin:auto;
+  letter-spacing: -1px;
+}
+
+.more {
+  width:100px;
+  height: 30px;
+  background: #2F7AF4;
+  color: #fff;
+  font-size: 12px;
+  line-height: 30px;
+  margin:25px auto;
+}
+
+.main_text1 {
+  width: 100%;
+  height:659px;
+}
+
+.main_text1 > h1 {
+  padding-top:50px;
+  text-align: center;
+}
+.main_text1 > .contents1 {
+  text-align: center;
+}
+
+.type {
+  width:1280px;
+  display: flex;
+  margin: 49px auto;
+  height:427px;
+}
+
+.type > .contents2 {
+  padding: 20px;
+}
+
+.type > .contents2 > h2 {
+  margin-bottom: 27px;
+}
+
+.main_text2 {
+  top: 1979px;
+  left: 0px;
+  height: 418px;
+  background-image: url("text2_img.jpg");
+  background-size: contain;
+}
+
+.main_text2 > ul {
+  display: flex;
+  padding-top:138px;
+}
+
+.main_text2 > ul > li {
+  flex: 1;
+  text-align: center;
+}
+
+.main_text2 > ul > li > div,
+.main_text2 > ul > li > div > h1 {
+  color: #fff;
+}
+
+.more2 {
+  width:220px;
+  height:40px;
+  border: 1px solid #fff;
+  color: #fff;
+  line-height: 40px;
+  cursor: pointer;
+  margin:16px auto;
+}
+
+
+#footer {
   min-width: 1440px;
   display: flex;
   flex-direction: column;
 }
-
