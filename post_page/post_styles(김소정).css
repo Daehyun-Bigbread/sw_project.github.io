@@ -194,8 +194,19 @@ h1 {
   padding-top:50px;
   text-align: center;
 }
+
 .main_text1 > .contents1 {
   text-align: center;
+}
+
+.main_text1 > .contents2 > p {
+  top: 1558px;
+  left: 980px;
+  width: 552px;
+  height: 333px;
+  text-align: left;
+  letter-spacing: 0px;
+  opacity: 1;
 }
 
 .type {
@@ -211,6 +222,17 @@ h1 {
 
 .type > .contents2 > h2 {
   margin-bottom: 27px;
+}
+
+.clothes {
+  width: 1280px;
+  display: flex;
+  margin: 49px auto;
+  height: 427px;
+}
+
+.clothes > .contents2 {
+  padding: 20px;
 }
 
 .main_text2 {
@@ -229,13 +251,11 @@ h1 {
   flex: 1;
   text-align: center;
 }
-
 .main_text2 > ul > li > div,
-.main_text2 > ul > li > div > h1 {
+.main_text2 > ul > li > div > h1{
   color: #fff;
 }
-
-.more2 {
+.more2{
   width:220px;
   height:40px;
   border: 1px solid #fff;
