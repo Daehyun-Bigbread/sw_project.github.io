@@ -108,13 +108,19 @@ header {
 }
 
 .second_paragraph,
-.third_paragraph {
+.third_paragraph,
+.forth_paragraph {
   margin: 20px 100px 40px 100px;
 }
 .para,
 .summary,
-.img_ex {
+.img_ex,
+h2 {
   font-family: "Playfair Display", serif;
+}
+
+h2 {
+  margin: auto;
 }
 .para::first-letter {
   font-size: 30px;
@@ -127,13 +133,25 @@ header {
   font-size: 17px;
 }
 
-.second_paragraph > ul {
+.second_paragraph > ul,
+.third_paragraph > ul,
+.forth_paragraph > ul {
   display: flex;
 }
-.para_img {
-  width: 500px;
+
+.para_img_right {
+  width: 400px;
   height: 400px;
   margin-left: 50px;
+}
+.para_img {
+  width: 350px;
+  height: 350px;
+  margin: auto;
+}
+.para_img_left {
+  width: 400px;
+  height: 300px;
 }
 
 .footer {
