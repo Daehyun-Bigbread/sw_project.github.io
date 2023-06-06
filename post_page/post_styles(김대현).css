@@ -107,3 +107,7 @@ header {
   display: flex;
   flex-direction: column;
 }
+
+.footer > div > p {
+  font-size: 13px;
+}
