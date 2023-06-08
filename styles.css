@@ -138,3 +138,13 @@ header {
   width: 100px;
   object-fit: cover;
 }
+
+.footer {
+  min-width: 1440px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer > p {
+  font-size: 13px;
+}
