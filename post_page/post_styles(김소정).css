@@ -236,7 +236,8 @@ h1 {
 }
 
 .main_text2 {
-  width: 100%;
+  margin: auto;
+  width: 1300px;
   height: 350px;
   background-image: url("./image(김소정)/contact.jpg");
   opacity: 1;
