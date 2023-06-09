@@ -18,12 +18,47 @@
             ><img id="home_img" src="../main_source/brand.png"
           /></a>
         </li>
-        <form>
-          <input type="search" placeholder="search" padding="20px" />
-          <button type="button">
-            <img id="ser_img" src="../main_source/search.png" />
+        <form id="Search_form">
+          <input
+            type="text"
+            id="inputValue"
+            placeholder="검색"
+            padding="20px"
+            list="input"
+          />
+          <datalist id="input">
+            <option value="Hermes">에르메스</option>
+            <option value="Stussy">스투시</option>
+            <option value="Buzz rickson's">버즈릭슨</option>
+          </datalist>
+          <button class="btn_search" type="submit" value="submit">
+            <img id="ser_img" src="main_source/search.png" />
           </button>
         </form>
+        <script>
+          document
+            .getElementById("Search_form")
+            .addEventListener("submit", function (event) {
+              event.preventDefault();
+
+              var inputValue = document
+                .getElementById("inputValue")
+                .value.toLowerCase(); // 입력값 가져오기
+
+              if (inputValue === "hermes" || inputValue === "에르메스") {
+                window.location.href = "../post_page/post_page(김대현).html";
+              } else if (inputValue === "stussy" || inputValue === "스투시") {
+                window.location.href = "../post_page/post_page(김소정).html";
+              } else if (
+                inputValue === "buzz rickson's" ||
+                inputValue === "버즈릭슨"
+              ) {
+                window.location.href = "../post_page/post_page(남영재).html";
+              } else {
+                window.location.href = "../index.html";
+              }
+            });
+        </script>
         <li id="personal_button">
           <a href="../login_page/login.html"
             ><img id="per_img" src="../main_source/login_icon.png"
@@ -65,6 +100,7 @@
             <h4 class="value-name">
               <a
                 href="https://github.com/Daehyun-Bigbread"
+                target="_blank"
                 style="color: #7844e8"
                 >GITHUB</a
               >
@@ -78,6 +114,7 @@
             <h4 class="value-name">
               <a
                 href="https://www.instagram.com/whimsical._.bigbread/"
+                target="_blank"
                 style="color: #7844e8"
                 >INSTAGRAM</a
               >
@@ -89,7 +126,10 @@
           <img class="value-icon" src="blog.png" />
           <div class="value-intro">
             <h4 class="value-name">
-              <a href="https://m.blog.naver.com/kdh1834" style="color: #7844e8"
+              <a
+                href="https://m.blog.naver.com/kdh1834"
+                target="_blank"
+                style="color: #7844e8"
                 >BLOG</a
               >
             </h4>
@@ -131,12 +171,17 @@
           <img class="value-icon" src="github.png" />
           <div class="value-intro">
             <h4 class="value-name">
-              <a href="https://github.com/sooo03" style="color: #3939d2"
+              <a
+                href="https://github.com/sooo03"
+                target="_blank"
+                style="color: #3939d2"
                 >GITHUB</a
               >
             </h4>
             <p class="value-exp">
-              <a href="https://github.com/sooo03">sooo03 깃허브 바로가기</a>
+              <a href="https://github.com/sooo03" target="_blank"
+                >sooo03 깃허브 바로가기</a
+              >
             </p>
           </div>
         </div>
@@ -145,13 +190,14 @@
           <div class="value-intro">
             <h4 class="value-name">
               <a
-                href="https://www.instagram.com/so__j.g/"
+                href="https://www.instagram.com/so__j.g/ "
+                target="_blank"
                 style="color: #3939d2"
                 >INSTAGRAM</a
               >
             </h4>
             <p class="value-exp">
-              <a href="https://www.instagram.com/so__j.g/"
+              <a href="https://www.instagram.com/so__j.g/" target="_blank"
                 >so__j.g 인스타 바로가기</a
               >
             </p>
@@ -161,12 +207,15 @@
           <img class="value-icon" src="blog.png" />
           <div class="value-intro">
             <h4 class="value-name">
-              <a href="https://m.blog.naver.com/xx0_ss0" style="color: #3939d2"
+              <a
+                href="https://m.blog.naver.com/xx0_ss0"
+                target="_blank"
+                style="color: #3939d2"
                 >BLOG</a
               >
             </h4>
             <p class="value-exp">
-              <a href="https://m.blog.naver.com/xx0_ss0"
+              <a href="https://m.blog.naver.com/xx0_ss0" target="_blank"
                 >쏘확행 블로그 바로가기</a
               >
             </p>
@@ -189,11 +238,12 @@
           <h2>ABOUT ME</h2>
           <p id="capability">
             사는 곳: 교육의 도시, 청주 <br />
-            MBTI: INFJ <br />처음 본 사람들에게는 말도 잘 못걸고, 뭐라 대답해야
-            할지도 모르는 자칭 JB. 옷은 잘 못입지만, 패션에 관심이 많아서 패션
+            MBTI: INFJ <br />
+            &nbsp;처음 본 사람들에게는 말도 잘 못걸고, 뭐라 대답해야 할지도
+            모르는 자칭 JB. 옷을 잘입지는 않지만, 패션에 관심이 많아서 패션
             인스타나 책자를 보는게 취미입니다. <br />특히 워크웨어, 아메카지,
-            밀리터리 브랜드에 관심이 많으면 꽤 괜찮은 이야기 상대가 될 수 있을
-            거라 생각합니다.
+            밀리터리 브랜드에 관심이 많고, 그 외에의 스타일은 잘 알지 못합니다.
+            <br />혹시 궁금한 점 있으면 물어봐주세요.
           </p>
         </div>
       </div>
@@ -203,12 +253,10 @@
         <div class="value">
           <img class="value-icon" src="github.png" />
           <div class="value-intro">
-            <h4 class="value-name">
-              <a href="https://github.com/giftedNam" style="color: #3939d2"
-                >GITHUB</a
-              >
-            </h4>
-            <h4 class="value-name">giftedNam</h4>
+            <h4 class="value-name" style="color: #3939d2">GITHUB</h4>
+            <a href="https://github.com/giftedNam" target="_blank"
+              ><p style="font-size: 16px">giftedNam 바로가기</p></a
+            >
           </div>
         </div>
         <div class="value">
