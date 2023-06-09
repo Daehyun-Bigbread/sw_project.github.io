@@ -39,7 +39,7 @@ h1 {
 
 .intro_bg {
   background-image: url("./image(김소정)/stussy_main.jpg");
-  width: 100%;
+  background-size: cover;
   height: 714px;
 }
 
