@@ -2,7 +2,7 @@
 <html lang="kr">
   <head>
     <meta charset="utf-8" />
-    <title>InfoGenerator - Introduce brand Information</title>
+    <title>InfoGenerator - Introduce Brand Information</title>
     <link href="styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <!-- link tag: head 안에 쓰고 data를 가져오는 tag(google font) -->
@@ -23,12 +23,45 @@
                 ><img id="home_img" src="main_source/brand.png"
               /></a>
             </li>
-            <form>
-              <input type="search" placeholder="search" padding="20px" />
-              <button type="button">
+            <form id="Search_form">
+              <input
+                type="text"
+                id="inputValue"
+                placeholder="검색"
+                padding="20px"
+              />
+              <button class="btn_search" type="submit" value="submit">
                 <img id="ser_img" src="main_source/search.png" />
               </button>
             </form>
+            <script>
+              document
+                .getElementById("Search_form")
+                .addEventListener("submit", function (event) {
+                  event.preventDefault();
+
+                  var inputValue = document
+                    .getElementById("inputValue")
+                    .value.toLowerCase(); // 입력값 가져오기
+
+                  if (inputValue === "hermes" || inputValue === "에르메스") {
+                    window.location.href = "./post_page/post_page(김대현).html";
+                  } else if (
+                    inputValue === "stussy" ||
+                    inputValue === "스투시"
+                  ) {
+                    window.location.href = "./post_page/post_page(김소정).html";
+                  } else if (
+                    inputValue === "buzz rickson's" ||
+                    inputValue === "버즈릭슨"
+                  ) {
+                    window.location.href = "./post_page/post_page(남영재).html";
+                  } else {
+                    alert("다시 입력해주세요.");
+                    document.getElementById("inputValue").value = "";
+                  }
+                });
+            </script>
             <li id="personal_button">
               <a href="login_page/login.html"
                 ><img id="per_img" src="main_source/login_icon.png"
@@ -60,7 +93,9 @@
                   src="./post_page/source(김대현)/20230609_131102.png"
                 />
                 <h3>HERMES</h3>
-                <h5>Everything changes. But the fundamentals don't change.</h5>
+                <h5 style="font-size: 15px">
+                  Everything changes. But the fundamentals don't change.
+                </h5>
               </div>
             </a>
           </div>
@@ -72,7 +107,7 @@
                   src="./post_page/image(김소정)/stussy_logo.png"
                 />
                 <h3>STÜSSY</h3>
-                <h5>
+                <h5 style="font-size: 15px">
                   SHAWN STUSSY라는 서핑보드에<br />
                   열광하는 CREW가 만든 브랜드입니다.
                 </h5>

@@ -27,12 +27,48 @@
                   ><img id="home_img" src="../main_source/brand.png"
                 /></a>
               </li>
-              <form>
-                <input type="search" placeholder="search" padding="20px" />
-                <button type="button">
-                  <img id="ser_img" src="../main_source/search.png" />
+              <form id="Search_form">
+                <input
+                  type="text"
+                  id="inputValue"
+                  placeholder="검색"
+                  padding="20px"
+                />
+                <button class="btn_search" type="submit" value="submit">
+                  <img id="ser_img" src="main_source/search.png" />
                 </button>
               </form>
+              <script>
+                document
+                  .getElementById("Search_form")
+                  .addEventListener("submit", function (event) {
+                    event.preventDefault();
+
+                    var inputValue = document
+                      .getElementById("inputValue")
+                      .value.toLowerCase(); // 입력값 가져오기
+
+                    if (inputValue === "hermes" || inputValue === "에르메스") {
+                      window.location.href =
+                        "../post_page/post_page(김대현).html";
+                    } else if (
+                      inputValue === "stussy" ||
+                      inputValue === "스투시"
+                    ) {
+                      window.location.href =
+                        "../post_page/post_page(김소정).html";
+                    } else if (
+                      inputValue === "buzz rickson's" ||
+                      inputValue === "버즈릭슨"
+                    ) {
+                      window.location.href =
+                        "../post_page/post_page(남영재).html";
+                    } else {
+                      alert("다시 입력해주세요.");
+                      document.getElementById("inputValue").value = "";
+                    }
+                  });
+              </script>
               <li id="personal_button">
                 <a href="../login_page/login.html"
                   ><img id="per_img" src="../main_source/login_icon.png"
@@ -74,16 +110,17 @@
                     모회사인 [TOYO ENTERPRISE]의 브랜드인 [SUGAR CANE]에서 비행
                     자켓 B-15 시리즈 출시했었는데, 그 당시 시장이 Type A-2, Type
                     MA-1이 주를 이뤘었는데, B-15가 그런 상황에 합리적인 가격과
-                    퀄리티로 많은 인기를 받았었는데, 이 제품과 그 흐름을
-                    버즈릭슨이 받아갔다고 할 수 있습니다. 개인적으로 버즈릭슨은
-                    워크웨어, 밀리터리에서 독보적인 브랜드는 아니지만, 흔히 MA-1
-                    점퍼라 불리는 제품에 대해서는 뛰어난 해석과 복각을 통해
-                    상당히 좋은 평가를 받고 있습니다. 일반적으로 이런 분야의
-                    패션에 관심이 없는 사람들은 부담스러워 하실 수 있고, 일종의
-                    코스프레라고 여겨질 수 도 있다고 생각됩니다. 그러나 모든
-                    제품, 브랜드가 완전하게 과거의 제품을 복각한 것은 아닙니다.
-                    몇몇은 현대적인 트렌드, 독자적인 해석을 통해, 일상에도
-                    적용할 수 있는 디자인 또한 추구하고 있습니다.
+                    퀄리티로 많은 인기를 받았습니다. 슈가케인의 시장에서의 일정
+                    지분을 같은 기업의 다른 브랜드인 버즈릭슨이 받아갔다고 할 수
+                    있습니다. 개인적으로 버즈릭슨은 워크웨어, 밀리터리에서
+                    독보적인 브랜드는 아니지만, 흔히 MA-1 점퍼라 불리는 제품에
+                    대해서는 뛰어난 해석과 복각을 통해 상당히 좋은 평가를 받고
+                    있습니다. 일반적으로 이런 분야의 패션에 관심이 없는 사람들은
+                    부담스러워 하실 수 있고, 일종의 코스프레라고 여겨질 수 도
+                    있다고 생각됩니다. 그러나 모든 제품, 브랜드가 완전하게
+                    과거의 제품을 복각한 것은 아닙니다. 몇몇은 현대적인 트렌드,
+                    독자적인 해석을 통해, 일상에도 적용할 수 있는 디자인 또한
+                    추구하고 있습니다.
                   </p>
                 </div>
               </li>
@@ -165,7 +202,9 @@
     <div class="footer">
       <div style="color: #ffffff; text-align: center; padding: 40px 20px">
         <!-- padding: 여백 양옆 40px 설정 (40,20 - 세로,가로), 베경색 설정(css), text-align: center (위치 중앙정렬)-->
-        <p><span style="font-weight: 700">세상 모든 브랜드를 소개합니다.</span></p>
+        <p>
+          <span style="font-weight: 700">세상 모든 브랜드를 소개합니다.</span>
+        </p>
         <!-- font-weight: 폰트 굵기 -->
         <p>Hankuk University of Foreign Studies</p>
         <p>

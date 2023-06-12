@@ -40,7 +40,16 @@ header {
   width: 450px;
   height: 70px;
   border: none;
-  background-color: rgba(0, 0, 0, 10%);
+  background-color: rgba(0, 0, 0, 30%);
+  color: white;
+  font-size: 50px;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
 }
 
 .nav > ul > form > button {

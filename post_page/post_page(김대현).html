@@ -15,12 +15,45 @@
           <li id="home_button">
             <a href="../index.html"><img id="home_img" src="../main_source/brand.png" /></a>
           </li>
-          <form>
-            <input type="search" placeholder="search" padding="20px" />
-            <button type="button">
+          <form id="Search_form">
+            <input
+              type="text"
+              id="inputValue"
+              placeholder="검색"
+              padding="20px"
+            />
+            <button class="btn_search" type="submit" value="submit">
               <img id="ser_img" src="../main_source/search.png" />
             </button>
           </form>
+          <script>
+            document
+              .getElementById("Search_form")
+              .addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                var inputValue = document
+                  .getElementById("inputValue")
+                  .value.toLowerCase(); // 입력값 가져오기
+
+                if (inputValue === "hermes" || inputValue === "에르메스") {
+                  window.location.href = "../post_page/post_page(김대현).html";
+                } else if (
+                  inputValue === "stussy" ||
+                  inputValue === "스투시"
+                ) {
+                  window.location.href = "../post_page/post_page(김소정).html";
+                } else if (
+                  inputValue === "buzz rickson's" ||
+                  inputValue === "버즈릭슨"
+                ) {
+                  window.location.href = "../post_page/post_page(남영재).html";
+                } else {
+                  alert("다시 입력해주세요.");
+                  document.getElementById("inputValue").value = "";
+                }
+              });
+          </script>
           <li id="personal_button">
             <a href="../login_page/login.html"><img id="per_img" src="../main_source/login_icon.png" /></a>
           </li>
