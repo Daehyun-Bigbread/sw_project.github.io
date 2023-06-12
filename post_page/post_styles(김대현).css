@@ -59,7 +59,13 @@ input::-webkit-search-results-decoration {
   background-color: rgba(0, 0, 0, 10%);
   border: none;
 }
-
+.nav > ul > form > button:active {
+  width: 50px;
+  height: 70px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 50%);
+  border: none;
+}
 #ser_img {
   margin-left: 10px;
   display: block;
